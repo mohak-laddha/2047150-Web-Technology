@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+    <title>Music Store</title>
+</head>
+
+<style>
+body {
+  background-image: url('https://hh-certificates.sgp1.digitaloceanspaces.com/blog/wp-content/uploads/2021/04/06121808/SEO-scaled-1.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+</style>
+
+
+
+<body >
+<font color="White">  
+    <details>
+   <summary>SEO</summary>
+	<h5>Search Engine Optimization</h5>
+	<p>SEO is a process by which a website is taken to the top level in the search results. Method adopted for this is optimization of a website with
+	possible keywords that can be used by visitors while searching.</p>
+  </details>
+
+
+
+    <details>
+        <summary> Click here to listen Shershaah</summary>
+        <figure>
+            <figcaption>Listen on Spotify</figcaption>
+            <audio
+                controls
+                src="raatan.mp3">
+                    
+                    <code>audio</code> element.
+            </audio>
+        </figure>
+    </details>
+
+    <details>
+        <summary> Click here to watch Shershaah shorts</summary>
+        <figure>
+            <figcaption>Watch on Prime Video</figcaption>
+
+            <div style="text-align:center"> 
+                <button onclick="playPause()">Play/Pause</button> 
+                <button onclick="makeBig()">Big</button>
+                <button onclick="makeSmall()">Small</button>
+                <button onclick="makeNormal()">Normal</button>
+                <br> 
+                <video id="video1" width="420">
+                  <source src="wats.mp4" type="video/mp4">
+                  <source src="wats.mp4" type="video/ogg">
+                  Your browser does not support HTML5 video.
+                </video>
+              </div> 
+              
+              <script> 
+              var myVideo=document.getElementById("video1"); 
+              
+              function playPause()
+              { 
+              if (myVideo.paused) 
+                myVideo.play(); 
+              else 
+                myVideo.pause(); 
+              } 
+              
+              function makeBig()
+              { 
+              myVideo.width=560; 
+              } 
+              
+              function makeSmall()
+              { 
+              myVideo.width=320; 
+              } 
+              
+              function makeNormal()
+              { 
+              myVideo.width=420; 
+              } 
+              </script> 
+              
+              <p>Video courtesy of <a href="https://www.primevideo.com/" target="_blank">Prime Video</a>.</p>
+            <!-- <video width="450" height="450" autoplay>
+                <source src="wats.mp4" type="video/mp4">
+                <source src="movie.ogg" type="video/ogg">
+              Your browser does not support the video tag.
+              </video> -->
+        </figure>
+    </details>
+
+
+
+
+
+    <!-- <figure>
+        <figcaption>Listen to the T-Rex:</figcaption>
+        <audio
+            controls
+            src="raatan.mp3">
+                Your browser does not support the
+                <code>audio</code> element.
+        </audio>
+    </figure> -->
+
+    
+</body>
+</html>
