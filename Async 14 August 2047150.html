@@ -1,9 +1,33 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
  
     <title>Music Store</title>
 </head>
+
+<style>
+div.scrollmenu {
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+div.scrollmenu a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+</style>
+<div class="scrollmenu">
+  <a href="#home">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+  <a href="#support">Support</a>
+ </div>
 
 <style>
 body {
@@ -14,99 +38,39 @@ body {
 }
 </style>
 
-
+    <form target="_blank" action="https://www.google.com/" method="POST">
+        <label>First Name: <input type="text" name="fname"></label>
+        <label>Last Name: <input type="text" name="lname"></label>
+        <input onclick="window.location.href = 'https://www.google.com/';" type="submit" value="Submit">
+   </form>
 
 <body >
 <font color="White">  
+
+
+
     <details>
-   <summary>SEO</summary>
+   <summary>What is SEO</summary>
 	<h5>Search Engine Optimization</h5>
 	<p>SEO is a process by which a website is taken to the top level in the search results. Method adopted for this is optimization of a website with
 	possible keywords that can be used by visitors while searching.</p>
   </details>
 
 
-
     <details>
-        <summary> Click here to listen Shershaah</summary>
+        <summary> Listen: The Local Train - Dil Mere</summary>
+         <img src="https://c-cl.cdn.smule.com/rs-s80/arr/46/a6/7af6b02c-15ee-4e44-bc06-565cc8174916_1024.jpg">
         <figure>
-            <figcaption>Listen on Spotify</figcaption>
+            <figcaption>Click the play button to play the song..</figcaption>
+	<br>
             <audio
                 controls
-                src="raatan.mp3">
+                src="D:\Christ College\III Semester\Web Technology\Async\The Local Train - Aalas Ka Pedh - Dil Mere.mp3">
                     
                     <code>audio</code> element.
             </audio>
         </figure>
     </details>
-
-    <details>
-        <summary> Click here to watch Shershaah shorts</summary>
-        <figure>
-            <figcaption>Watch on Prime Video</figcaption>
-
-            <div style="text-align:center"> 
-                <button onclick="playPause()">Play/Pause</button> 
-                <button onclick="makeBig()">Big</button>
-                <button onclick="makeSmall()">Small</button>
-                <button onclick="makeNormal()">Normal</button>
-                <br> 
-                <video id="video1" width="420">
-                  <source src="wats.mp4" type="video/mp4">
-                  <source src="wats.mp4" type="video/ogg">
-                  Your browser does not support HTML5 video.
-                </video>
-              </div> 
-              
-              <script> 
-              var myVideo=document.getElementById("video1"); 
-              
-              function playPause()
-              { 
-              if (myVideo.paused) 
-                myVideo.play(); 
-              else 
-                myVideo.pause(); 
-              } 
-              
-              function makeBig()
-              { 
-              myVideo.width=560; 
-              } 
-              
-              function makeSmall()
-              { 
-              myVideo.width=320; 
-              } 
-              
-              function makeNormal()
-              { 
-              myVideo.width=420; 
-              } 
-              </script> 
-              
-              <p>Video courtesy of <a href="https://www.primevideo.com/" target="_blank">Prime Video</a>.</p>
-            <!-- <video width="450" height="450" autoplay>
-                <source src="wats.mp4" type="video/mp4">
-                <source src="movie.ogg" type="video/ogg">
-              Your browser does not support the video tag.
-              </video> -->
-        </figure>
-    </details>
-
-
-
-
-
-    <!-- <figure>
-        <figcaption>Listen to the T-Rex:</figcaption>
-        <audio
-            controls
-            src="raatan.mp3">
-                Your browser does not support the
-                <code>audio</code> element.
-        </audio>
-    </figure> -->
 
     
 </body>
