@@ -21,15 +21,16 @@ body {
     <form action="D:\Christ College\III Semester\Web Technology\LAB 3\LAB 3 Music Store.html" method="post">
 
       	<label for="uname"><b>Username</b></label><br>
-     	 <input type="text" placeholder="Enter Username" name="uname" required>	<br>
-	<label for="psw"><b>Password</b></label><br>
-	<input type="password" placeholder="Enter Password" name="psw" required><br>
+     	<input type="text" placeholder="Enter Username" name="uname" required>	<br>
+	
+		<label for="psw"><b>Password</b></label><br>
+		<input type="password" placeholder="Enter Password" name="psw" required><br>
 
-	<input type="radio" name="gender" value="male" id="male">
+		<input type="radio" name="gender" value="male" id="male">
        	<label for="male">Male</label><br>
-        	<input type="radio" name="gender" value="female" id="female">
-	<label for="female">Female</label><br>
-	<input type="radio" name="gender" value="male" id="male">
+        <input type="radio" name="gender" value="female" id="female">
+		<label for="female">Female</label><br>
+		<input type="radio" name="gender" value="male" id="male">
        	<label for="male">Other</label><br>
 
         <input type="submit" value="Register">
@@ -89,7 +90,7 @@ hr { background-color: red; height: 4px; border: 0; }
 <HR>
 
 <form style="background-color:#333" action="https://www.musicstores.in/login?back=https://www.musicstores.in/" method="POST">
-  <font color="white">
+  <font color="white" >
         <fieldset>
             <legend>Name</legend>            
             <label>Firstname: <input type="text" name="firstname"></label>            
@@ -97,8 +98,8 @@ hr { background-color: red; height: 4px; border: 0; }
         </fieldset>
         <fieldset>
             <legend>Gender</legend>            
-            <label><input type="radio" name="gender" value="male"> Male</label>            
-            <label><input type="radio" name="gender" value="female" checked> Female</label>
+            <label><input type="radio" name="gender" value="male" checked> Male</label>            
+            <label><input type="radio" name="gender" value="female"> Female</label>
             <label><input type="radio" name="gender" value="other"> Other</label>
         </fieldset>
         <fieldset>
@@ -124,37 +125,114 @@ hr { background-color: red; height: 4px; border: 0; }
         </fieldset>
         <fieldset>
           <label for="buydate">When you would like to buy instrument...</label>
-          <input type="date" id="start" name="trip-start" value="2021-08-17" min="2021-08-17" max="2024-12-31">
+          <input type="date" id="start" name="trip-start" value="2021-08-18" min="2021-08-18" max="2024-12-31">
         </fieldset>
 	<br>
   <center>
-	<input onclick="window.location.href = 'https://www.musicstores.in/login?back=https://www.musicstores.in/';" type="submit" value="Submit" style="background-color:red; height:40px; width:80px; color: white;">	
+	<input onclick="window.location.href = 'https://www.musicstores.in/login?back=https://www.musicstores.in/';" type="button" value="Submit" style="background-color:red; height:40px; width:80px; color: white;">	
 	<input type="reset" value="Reset" style="background-color:red; height:40px; width:80px; color: white;">
   </center>
   </font>
-</form>
+</form> 
 <HR>
 
-<div class="block">
-          <ul>
-            <li>
+  <div style="float:left; margin:10px">Products
+    <ul>
+      <li><a href="//www.musicstores.in/20-guitars">Guitars</a></li>
+      <li><a href="//www.musicstores.in/13-keyboards">Keyboards</a></li>
+      <li><a href="//www.musicstores.in/47-violins">Violins</a></li>
+      <li><a href="//www.musicstores.in/97-head-phones-">Head Phones</a></li>
+      <li><a href="//www.musicstores.in/-">Amplifiers</a></li>
+      <li><a href="//www.musicstores.in/98-studio-monitors">Studio Monitors</a></li>
+      <li><a href="//www.musicstores.in/85-microphones">Microphones</a></li>
+      <li><a href="//www.musicstores.in/94-other-accessories">Other Accessories</a></li>
+      
+      <li><a href="https://www.musicstores.in/new-arrived-musical-instruments-at-music-stores-in-india">Latest Arrivals</a></li>
+      <li><a title="Buy all musical instruments online" href="https://www.musicstores.in/2-musical-instruments-in-india">All Musical Instruments</a></li>
+    </ul>
+    </div>
 
-              <span class="material-icons">location_on</span>
-              <div class="">
-                  <a href="https://www.musicstores.in/">
 
-                    1st Floor, Above Bata Showroom,<br>
-                    Metro Pillar No 1727,<br>
-                    Madhapur, Hyderabad<br>
-                    500081
+    <div style="float:right; margin:10px">Our company
+    <ul>
+          <li>
+        <a
+        href="https://www.musicstores.in/content/1-delivery"
+        title="Our terms and conditions of delivery"
+              >
+        Shipping &amp; Returns
+      </a>
+    </li>
+        <li>
+        <a
+        href="https://www.musicstores.in/content/2-legal-notice"
+        title="Legal notice"
+              >
+        Privacy Policy
+      </a>
+    </li>
+        <li>
+        <a href="https://www.musicstores.in/content/3-terms-and-conditions-of-use"
+        title="Our terms and conditions of use"
+              >
+        Terms and Conditions 
+      </a>
+    </li>
+        <li>
+        <a href="https://www.musicstores.in/content/4-about-us"
+        title="Learn more about us"
+              >
+        About us
+      </a>
+    </li>
+        <li>
+        <a href="https://www.musicstores.in/content/5-secure-payment"
+        title="Our secure payment method"
+              >
+        Payment Methods
+      </a>
+    </li>
+        <li>
+        <a href="https://www.musicstores.in/content/6-shipping-return-policy"
+        title="Music stores shipping &amp; return policy"
+              >
+        Returns &amp; Refunds
+      </a>
+    </li>
+        <li>
+        <a href="https://www.musicstores.in/contact-us"
+        title="Use our form to contact us"
+              >
+        Contact Music Stores · Music Stores
+      </a>
+    </li>
+        <li>
+        <a href="https://www.musicstores.in/sitemap"
+        title="Lost ? Find what your are looking for"
+              >
+        Sitemap
+      </a>
+    </li>
+        <li>
+        <a href="https://www.musicstores.in/my-account"
+        title=""
+              >
+        My account
+      </a>
+    </li>
+    </ul>
+  </div>
 
-                  </a>
-</div>
-<BR>
-<HR>
+
+  <center><h1>Contact Us</h1>
+      <address>
+        <a href="https://www.musicstores.in/">Music Store</a><br>
+          1st Floor, Above Bata Showroom,<br>
+          Metro Pillar No 1727,<br>
+          Madhapur, Hyderabad<br>
+          500081
+      </address>
+  </center>
 
 </BODY>
-
 </HTML>
-  
-  
