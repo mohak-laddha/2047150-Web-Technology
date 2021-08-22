@@ -1,0 +1,458 @@
+LOGIN PAGE
+
+
+<!doctype html>
+<HTML>
+<HEAD>    
+<title>Musical Instruments Seller in India | Musicstores.in</title>
+</HEAD>
+
+<style>
+
+body {
+  background-image: url('https://www.incimages.com/uploaded_files/image/1920x1080/getty_626660256_2000108620009280158_388846.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+</style>
+
+<BODY>
+<CENTER>
+    <form action="D:\Christ College\III Semester\Web Technology\LAB 4\2047150.html" method="post">
+		<BR>
+      	<label for="uname"><b>Username</b></label><br>
+     	<input type="text" placeholder="Enter Username" name="uname" required>	<br>
+	
+		<label for="psw"><b>Password</b></label><br>
+		<input type="password" placeholder="Enter Password" name="psw" required><br>
+		<BR>
+
+        <input type="submit" value="Login">
+    </form>
+	<BR><BR><BR>
+	<embed type="image/jpg" src="D:\Christ College\III Semester\Web Technology\LAB 4\music.png" width="300" height="300">
+
+
+</CENTER>
+</BODY>
+
+<HTML>
+  
+  
+  
+==================================================================================================================================================================================
+  
+  
+  
+MAIN PAGE
+  
+  
+  
+
+<!doctype html>
+<HTML lang="en">
+<HEAD>    
+<title>Musical Instruments Seller Musicstores.in</title>
+</HEAD>
+
+<STYLE>
+div.scrollmenu {
+  background-color: #333;
+  overflow: auto;
+  text-align: top;
+  white-space: nowrap;
+  padding-top: 15px;
+}
+
+div.scrollmenu a {
+  display: inline-block;
+  color: white;
+  text-align: top;
+  padding: 14px;
+  text-decoration: none;
+  padding-top: 0px;
+}
+hr { background-color: red; height: 4px; border: 0; }
+
+</STYLE>
+
+<BODY bgcolor="#ccc">
+<img src="https://www.musicstores.in/img/musicstores-logo-1537782218.jpg">
+
+<HR>
+<div class="scrollmenu">
+  <a href="#categories">CATEGORIES</a>
+  <a href="#brands">BRANDS</a>
+  <a href="#inmedia">IN MEDIA</a>
+
+  <a href="https://www.musicstores.in/contact-us">CONTACT</a>
+  <a href="https://www.musicstores.in">HOME</a>
+
+</div>
+<HR>
+
+            <div style="text-align:center"> 
+            <button onclick="playPause()">Play/Pause</button> 
+            <button onclick="makeBig()">Big</button>
+            <button onclick="makeSmall()">Small</button>
+            <button onclick="makeNormal()">Normal</button>
+            <BR> 
+            <video id="video1" width="420" height="340" controls>
+                <source src="videosong.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+            <iframe style="margin-left: 20px;" width="420" height="285" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1">
+            </iframe>
+
+            <audio controls src="D:\Christ College\III Semester\Web Technology\Async\The Local Train - Aalas Ka Pedh - Dil Mere.mp3" style="margin-left:20px; margin-bottom:120px;">
+                <!---<code>audio</code> element. --->
+            </audio>
+        </div> 
+
+
+        <script> 
+            var myVideo = document.getElementById("video1"); 
+            
+            function playPause() { 
+            if (myVideo.paused) 
+                myVideo.play(); 
+            else 
+                myVideo.pause(); 
+            } 
+            
+            function makeBig() { 
+                myVideo.width = 560; 
+            } 
+            
+            function makeSmall() { 
+                myVideo.width = 320; 
+            } 
+            
+            function makeNormal() { 
+                myVideo.width = 420; 
+            } 
+        </script>
+
+
+<HR>
+    <div style="float:left; margin:10px">Products
+        <ul>
+        <li><a href="//www.musicstores.in/20-guitars">Guitars</a></li>
+        <li><a href="//www.musicstores.in/13-keyboards">Keyboards</a></li>
+        <li><a href="//www.musicstores.in/47-violins">Violins</a></li>
+        <li><a href="//www.musicstores.in/97-head-phones-">Head Phones</a></li>
+        <li><a href="//www.musicstores.in/-">Amplifiers</a></li>
+        <li><a href="//www.musicstores.in/98-studio-monitors">Studio Monitors</a></li>
+        <li><a href="//www.musicstores.in/85-microphones">Microphones</a></li>
+        <li><a href="//www.musicstores.in/94-other-accessories">Other Accessories</a></li>
+        
+        <li><a href="https://www.musicstores.in/new-arrived-musical-instruments-at-music-stores-in-india">Latest Arrivals</a></li>
+        <li><a title="Buy all musical instruments online" href="https://www.musicstores.in/2-musical-instruments-in-india">All Musical Instruments</a></li>
+        </ul>
+    </div>
+
+
+    <div style="float:right; margin:10px">Our company
+    <ul>
+          <li>
+        <a
+        href="https://www.musicstores.in/content/1-delivery"
+        title="Our terms and conditions of delivery"
+              >
+        Shipping &amp; Returns
+      </a>
+    </li>
+        <li>
+        <a
+        href="https://www.musicstores.in/content/2-legal-notice"
+        title="Legal notice"
+              >
+        Privacy Policy
+      </a>
+    </li>
+        <li>
+        <a href="https://www.musicstores.in/content/3-terms-and-conditions-of-use"
+        title="Our terms and conditions of use"
+              >
+        Terms and Conditions 
+      </a>
+    </li>
+        <li>
+        <a href="https://www.musicstores.in/content/4-about-us"
+        title="Learn more about us"
+              >
+        About us
+      </a>
+    </li>
+        <li>
+        <a href="https://www.musicstores.in/content/5-secure-payment"
+        title="Our secure payment method"
+              >
+        Payment Methods
+      </a>
+    </li>
+        <li>
+        <a href="https://www.musicstores.in/content/6-shipping-return-policy"
+        title="Music stores shipping &amp; return policy"
+              >
+        Returns &amp; Refunds
+      </a>
+    </li>
+        <li>
+        <a href="https://www.musicstores.in/contact-us"
+        title="Use our form to contact us"
+              >
+        Contact Music Stores · Music Stores
+      </a>
+    </li>
+        <li>
+        <a href="https://www.musicstores.in/sitemap"
+        title="Lost ? Find what your are looking for"
+              >
+        Sitemap
+      </a>
+    </li>
+        <li>
+        <a href="https://www.musicstores.in/my-account"
+        title=""
+              >
+        My account
+      </a>
+    </li>
+    </ul>
+  </div>
+
+
+  <center><h1>Contact Us</h1>
+      <address>
+        <a href="https://www.musicstores.in/">Music Store</a><br>
+        <a href="D:\Christ College\III Semester\Web Technology\LAB 4\map.html"  1st Floor, Above Bata Showroom,<br>
+          Metro Pillar No 1727,<br>
+          Madhapur, Hyderabad<br>
+          500081
+      </address>
+  </center>
+
+</BODY>
+</HTML>
+  
+  
+  
+==================================================================================================================================================================================
+  
+  
+ MAP PAGE
+  
+  
+
+<!doctype html>
+<HTML lang="en">
+<HEAD>    
+<title>Musical Instruments Seller Musicstores.in</title>
+</HEAD>
+
+<STYLE>
+div.scrollmenu {
+  background-color: #333;
+  overflow: auto;
+  text-align: top;
+  white-space: nowrap;
+  padding-top: 15px;
+}
+
+div.box {
+  overflow: auto;
+  text-align: top;
+  white-space: nowrap;
+  padding-top: 15px;
+}
+
+div.scrollmenu a {
+  display: inline-block;
+  color: white;
+  text-align: top;
+  padding: 14px;
+  text-decoration: none;
+  padding-top: 0px;
+}
+hr { background-color: red; height: 4px; border: 0; }
+
+</STYLE>
+
+<BODY bgcolor="#ccc">
+<img src="https://www.musicstores.in/img/musicstores-logo-1537782218.jpg">
+
+<HR>
+<div class="scrollmenu">
+  <a href="#categories">CATEGORIES</a>
+  <a href="#brands">BRANDS</a>
+  <a href="#inmedia">IN MEDIA</a>
+
+  <a href="https://www.musicstores.in/contact-us">CONTACT</a>
+  <a href="https://www.musicstores.in">HOME</a>
+
+</div>
+<HR>
+
+    <center>
+               
+        <button type="button" onclick="getlocation();">
+        Current Position</button>
+        
+        <div class="box" id="map1" style="width: 1000px; height: 350px">
+        </div>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d121810.04478209856!2d78.3787473!3d17.4327041!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb915fc6bbffff%3A0xebdb8d29c0b0fab2!2sMusic%20Stores!5e0!3m2!1sen!2sin!4v1629569825355!5m2!1sen!2sin" width="1000" height="350" style="border:0;" allowfullscreen="" loading="lazy">
+            
+        </iframe>
+    </center>
+    
+        
+
+        <script src="https://maps.google.com/maps/api/js?sensor=false">
+        </script>
+
+        <script type="text/javascript">
+        function getlocation(){
+            if(navigator.geolocation){
+                navigator.geolocation.getCurrentPosition(showLoc, errHand);
+            }
+        }
+        function showLoc(pos){
+            latt = pos.coords.latitude;
+            long = pos.coords.longitude;
+            var lattlong = new google.maps.LatLng(latt, long);
+            var OPTions = {
+                center: lattlong,
+                zoom: 10,
+                mapTypeControl: true,
+                navigationControlOptions: {style:google.maps.NavigationControlStyle.SMALL}
+            }
+            var mapg = new google.maps.Map(document.getElementById("map1"), OPTions);
+            var markerg =
+               new google.maps.Marker({position:lattlong, map:mapg, title:"You are here!"});
+        }
+         
+        function errHand(err) {
+            switch(err.code) {
+                case err.PERMISSION_DENIED:
+                    result.innerHTML = "The application doesn't have the permission"  +
+                               "to make use of location services"
+                    break;
+                case err.POSITION_UNAVAILABLE:
+                    result.innerHTML = "The location of the device is uncertain"
+                    break;
+                case err.TIMEOUT:
+                    result.innerHTML = "The request to get user location timed out"
+                    break;
+                case err.UNKNOWN_ERROR:
+                    result.innerHTML = "Time to fetch location information exceeded"+
+                      "the maximum timeout interval"
+                    break;
+            }
+        }
+        </script>
+
+
+<HR>
+    <div style="float:left; margin:10px">Products
+        <ul>
+        <li><a href="//www.musicstores.in/20-guitars">Guitars</a></li>
+        <li><a href="//www.musicstores.in/13-keyboards">Keyboards</a></li>
+        <li><a href="//www.musicstores.in/47-violins">Violins</a></li>
+        <li><a href="//www.musicstores.in/97-head-phones-">Head Phones</a></li>
+        <li><a href="//www.musicstores.in/-">Amplifiers</a></li>
+        <li><a href="//www.musicstores.in/98-studio-monitors">Studio Monitors</a></li>
+        <li><a href="//www.musicstores.in/85-microphones">Microphones</a></li>
+        <li><a href="//www.musicstores.in/94-other-accessories">Other Accessories</a></li>
+        
+        <li><a href="https://www.musicstores.in/new-arrived-musical-instruments-at-music-stores-in-india">Latest Arrivals</a></li>
+        <li><a title="Buy all musical instruments online" href="https://www.musicstores.in/2-musical-instruments-in-india">All Musical Instruments</a></li>
+        </ul>
+    </div>
+
+
+    <div style="float:right; margin:10px">Our company
+    <ul>
+          <li>
+        <a
+        href="https://www.musicstores.in/content/1-delivery"
+        title="Our terms and conditions of delivery"
+              >
+        Shipping &amp; Returns
+      </a>
+    </li>
+        <li>
+        <a
+        href="https://www.musicstores.in/content/2-legal-notice"
+        title="Legal notice"
+              >
+        Privacy Policy
+      </a>
+    </li>
+        <li>
+        <a href="https://www.musicstores.in/content/3-terms-and-conditions-of-use"
+        title="Our terms and conditions of use"
+              >
+        Terms and Conditions 
+      </a>
+    </li>
+        <li>
+        <a href="https://www.musicstores.in/content/4-about-us"
+        title="Learn more about us"
+              >
+        About us
+      </a>
+    </li>
+        <li>
+        <a href="https://www.musicstores.in/content/5-secure-payment"
+        title="Our secure payment method"
+              >
+        Payment Methods
+      </a>
+    </li>
+        <li>
+        <a href="https://www.musicstores.in/content/6-shipping-return-policy"
+        title="Music stores shipping &amp; return policy"
+              >
+        Returns &amp; Refunds
+      </a>
+    </li>
+        <li>
+        <a href="https://www.musicstores.in/contact-us"
+        title="Use our form to contact us"
+              >
+        Contact Music Stores · Music Stores
+      </a>
+    </li>
+        <li>
+        <a href="https://www.musicstores.in/sitemap"
+        title="Lost ? Find what your are looking for"
+              >
+        Sitemap
+      </a>
+    </li>
+        <li>
+        <a href="https://www.musicstores.in/my-account"
+        title=""
+              >
+        My account
+      </a>
+    </li>
+    </ul>
+  </div>
+
+
+  <center><h1>Contact Us</h1>
+      <address>
+        <a href="https://www.musicstores.in/">Music Store</a><br>
+          1st Floor, Above Bata Showroom,<br>
+          Metro Pillar No 1727,<br>
+          Madhapur, Hyderabad<br>
+          500081
+      </address>
+  </center>
+
+</BODY>
+</HTML>
