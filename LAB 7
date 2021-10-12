@@ -1,1 +1,170 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="computerstore.xsl"?>
+<!DOCTYPE musicstore SYSTEM "computerstore.dtd">
+<computerstore>
+<computer>
+  <product_id>10001</product_id>
+  <product_name>Cabinet</product_name>
+  <quantity>510</quantity>
+  <mfd>2019</mfd>
+  <price>1050</price>
+</computer>
+<computer>
+  <product_id>10002</product_id>
+  <product_name>Mouse</product_name>
+  <quantity>200</quantity>
+  <mfd>2021</mfd>
+  <price>250</price>
+</computer>
+<computer>
+  <product_id>10003</product_id>
+  <product_name>Keyboard</product_name>
+  <quantity>250</quantity>
+  <mfd>2021</mfd>
+  <price>850</price>
+</computer>
+<computer>
+  <product_id>10004</product_id>
+  <product_name>Monitor</product_name>
+  <quantity>140</quantity>
+  <mfd>2020</mfd>
+  <price>5000</price>
+</computer>
+<computer>
+  <product_id>10005</product_id>
+  <product_name>Mouse Pad</product_name>
+  <quantity>200</quantity>
+  <mfd>2020</mfd>
+  <price>100</price>
+</computer>
+<computer>
+  <product_id>10006</product_id>
+  <product_name>VGA Cable</product_name>
+  <quantity>150</quantity>
+  <mfd>2019</mfd>
+  <price>170</price>
+</computer>
+<computer>
+  <product_id>10007</product_id>
+  <product_name>PSU</product_name>
+  <quantity>330</quantity>
+  <mfd>2020</mfd>
+  <price>2220</price>
+</computer>
+<computer>
+  <product_id>10008</product_id>
+  <product_name>Pendrive</product_name>
+  <quantity>200</quantity>
+  <mfd>2018</mfd>
+  <price>450</price>
+</computer>
+<computer>
+  <product_id>10009</product_id>
+  <product_name>External HDD</product_name>
+  <quantity>50</quantity>
+  <mfd>2019</mfd>
+  <price>3500</price>
+</computer>
+<computer>
+  <product_id>10010</product_id>
+  <product_name>Headphone</product_name>
+  <quantity>300</quantity>
+  <mfd>2021</mfd>
+  <price>2800</price>
+</computer>
 
+</computerstore>
+
+
+
+
+
+
+===============================================================================================================================================================
+
+
+
+XSL
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:template match="/">
+<html>
+
+ <style>
+         table, th, td {
+          border: 5px solid green;
+          text-align:center;
+          
+          }
+         th, td {
+         padding: 20px;
+         background-color:none;
+         
+       }
+</style>
+
+<body>
+<center>
+<h1>Computer Store</h1>
+<table cellspacing="10" width="90%">
+<tr bgcolor="red">
+<th>Product_Id</th>
+<th>Product_Name</th>
+<th>Quantity</th>
+<th>Mfg Date</th>
+<th>Price</th>
+</tr>
+<xsl:for-each select="computerstore/computer">
+<tr>
+<td bgcolor="LightGray"><xsl:value-of select="product_id"/></td>
+<xsl:choose>
+<xsl:when test="price &gt; 500">
+<td bgcolor="Gray"><xsl:value-of select="product_name"/></td>
+</xsl:when>
+<xsl:when test="price &gt; 1000">
+<td bgcolor="green"><xsl:value-of select="product_name"/></td>
+</xsl:when>
+
+<xsl:otherwise>
+<td><xsl:value-of select="product_name"/></td>
+</xsl:otherwise>
+</xsl:choose>
+<td bgcolor="clay"><xsl:value-of select="quantity"/></td>
+<td bgcolor="clay"><xsl:value-of select="mfd"/></td>
+<td bgcolor="LightGray"><xsl:value-of select="price"/></td>
+
+</tr>
+</xsl:for-each>
+</table>
+</center>
+</body>
+</html>
+</xsl:template>
+</xsl:stylesheet>
+
+
+
+
+
+
+
+
+
+===================================================================================================================================================================
+
+<?php
+// Load XML file
+$xml = new DOMDocument;
+$xml->load('contractdet.xml');
+
+// Load XSL file
+$xsl = new DOMDocument;
+$xsl->load('contractdet.xsl');
+
+// Configure the transformer
+$proc = new XSLTProcessor;
+
+// Attach the xsl rules
+$proc->importStyleSheet($xsl);
+
+echo $proc->transformToXML($xml);
+?>
