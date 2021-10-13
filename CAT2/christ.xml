@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="CHRIST.xsl"?>
+
+<CHRIST>
+<CS>
+<STU-NAME>Mohak Laddha </STU-NAME>
+<STU-BRANCH>MCS </STU-BRANCH>
+<STU-COLLEGE>Christ Univeristy </STU-COLLEGE>
+<STU-EMAIL> mohak@gmail.com </STU-EMAIL>  
+</CS>
+
+<CS>
+<STU-NAME>Harshit Soni </STU-NAME>
+<STU-BRANCH>MDS </STU-BRANCH>
+<STU-COLLEGE>Christ Univeristy </STU-COLLEGE>
+<STU-EMAIL> harshit1991@gmail.com </STU-EMAIL>  
+</CS>
+
+<CS>
+<STU-NAME>Himanshu Singh</STU-NAME>
+<STU-BRANCH>MCA </STU-BRANCH>
+<STU-COLLEGE>Christ Univeristy </STU-COLLEGE>
+<STU-EMAIL> himanshusingh@gmail.com </STU-EMAIL>  
+</CS>
+
+
+</CHRIST>
