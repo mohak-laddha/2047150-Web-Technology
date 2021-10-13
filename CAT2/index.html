@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <script defer src="script.js"></script>
+</head>
+<link rel="stylesheet" href="style.css">
+<body bgcolor="#ccc">
+    
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwp0KKaiQncMaBOGvc1IgZtCo8jBta3GdhGw&usqp=CAU">
+
+        <h1>Gateways 2021</h1>
+    <h4>The Post Graduate students of Department of Computer Science, CHRIST (Deemed to be
+         University), Bangalore is organizing an online national-level IT fest called Gateways 2021, on
+        Nov 6 and 7, 2021.
+        </h4>
+        <h3>Fill the form to perticipant in the events..</h3>
+    <fieldset>
+    <div id="error"></div>
+    <form id="form" action="#" method="GET">
+        <div>
+            <fieldset>
+            <label for="name">Name: </label>
+            <input id="name" name="name" type="text" required>
+
+            <label for="email">Email: </label>
+            <input id="email" name="email" type="email" required>
+        </fieldset>
+        </div>
+
+        <div>
+            <fieldset>
+            <label for="branch">Branch</label>
+             <select id="course">
+                <option value="msc">MSc(CS)</option>
+                <option value="mca">MCA)</option>
+                <option value="mtech">M.Tech</option>
+                </select>
+            
+                <label for="clgname">College Name: </label>
+                <input id="clgname" name="clgname" type="text" required>
+                </fieldset>
+            </div>
+
+
+            <div>
+                <fieldset>
+                <label for="add">Address: </label>
+                <input id="add" name="add" type="text" required>
+                <label for="state">State: </label>
+                <input id="state" name="state" type="text" required>
+    
+            </fieldset>
+            </div>
+
+
+            <div>
+                <fieldset>
+                <label for="age">Age: </label>
+                <input id="age" name="age" type="age" required>
+                <label for="phone">Phone Number: </label>
+                <input id="phone" name="phone" type="number" Maxlength="10" required ">
+        
+            </fieldset>
+            </div>
+
+
+            <div>
+            <fieldset>
+                <label for="user">Username: </label>
+                <input id="user" name="user" type="text" required>
+                <label for="password">Password: </label>
+                <input id="password" name="password" type="password" required>
+        </fieldset>
+        </div>
+        
+       
+
+        <div>
+            <fieldset>
+            <legend>Gender</legend> 
+            <input type="radio" id="male" name="gender" value="male">
+              <label for="male">Male</label>
+              <input type="radio" id="female" name="gender" value="female">
+              <label for="female">Female</label>
+              <input type="radio" id="other" name="other" value="other">
+              <label for="other">Other</label>
+        </fieldset>
+        </div>
+
+        <div>
+            <fieldset>
+                <legend>Event you are interested in..</legend>            
+                <label><input type="checkbox" name="event" value="it"> IT Manager</label>
+                <label><input type="checkbox" name="event" value="cd"> CODING AND DEBUGGING</label>
+                <label><input type="checkbox" name="event" value="hack"> HACKATHON</label>
+                <label><input type="checkbox" name="event" value="th"> Treasure Hunt/label>
+        </fieldset>
+        </div>
+
+
+        <div>
+            <fieldset>
+            <label for="theme">Theme you want to suggest:  </label>
+            <textarea id="theme" rows="2" cols="50" name="theme" form="form" required></textarea>
+        </div>
+        <button type="submit" id="submit" style="background-color:red; height:40px; width:80px; color: white;">Submit</button>
+    </fieldset>
+    </form>
+    
+
+</body>
+</html>
