@@ -5,23 +5,13 @@
 	$age = $_POST['age'];
 	$gender = $_POST['gender'];
 	$course = $_POST['course'];
-  $addr = $_POST['address'];
-	$q_checkadmin = $conn->query("SELECT * FROM `stdinfo` WHERE `st-id` = '$sid'") or die(mysqli_error());
-		$v_checkadmin = $q_checkadmin->num_rows;
-		if($v_checkadmin == 1){
-			echo '
-				<script type = "text/javascript">
-					alert("student id already taken");
-					window.location = "admin.php";
-				</script>
-			';
-		}else{
-			$conn->query("INSERT INTO `stdinfo` VALUES('$sid', '$sanme', '$age', '$gender', '$course', '$addr')") or die(mysqli_error());
-			echo '
-				<script type = "text/javascript">
-					alert("Saved Record");
-					window.location = "admin.php";
-				</script>
-			';
+  	$addr = $_POST['address'];
+
+	$conn->query("INSERT INTO `stdinfo` VALUES('$sid', '$sanme', '$age', '$gender', '$course', '$addr')") or die(mysqli_error());
+		echo '
+			<script type = "text/javascript">
+				alert("Saved Record");
+				window.location = "admin.php";
+			</script>
+		';
 		}
-	}	
